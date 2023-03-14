@@ -23,7 +23,7 @@
   function refresh() {
   var isSynOrValid = false;
 
-  $('td').each(function() {
+$('td').each(function() {
   var tabIndex = $(this).attr('tabindex');
   if (tabIndex % 8 === 3 && $(this).find('span').text().match(/^(Synonym|Valid)$/i)) {
     isSynOrValid = true;
